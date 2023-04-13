@@ -37,6 +37,6 @@ async function getItems(data) {
             }
         })
     })
-    console.log('--basket--', (basket));
+    // console.log('--basket--', (basket));
     return basket
 }

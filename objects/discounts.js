@@ -13,8 +13,8 @@ const data = [
         discountingStage: OPTIONS[0],   
         discountingStageId: '1',
         itemId: '',
-        discount: 10
-
+        discount: '3-1',
+        discountType: 'free'
     }, {
         id: 2,
         description: '',
@@ -22,7 +22,8 @@ const data = [
         discountingStage: '',
         discountingStageId: '',
         itemId: '',
-        discount: 10
+        discount: '3-1',
+        discountType: 'free'
     }
 ]
 

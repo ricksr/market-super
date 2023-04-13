@@ -9,7 +9,8 @@ const {
 } = basket;
 
 const {
-    generateBill
+    generateBill,
+    getFinalAmount,
 } = invoice;
 
 const {
@@ -19,6 +20,8 @@ const {
 let userBasket = await getItems({ name: "Anish Kumar", email: "random1@r1.com" })
 let invoiceAmount = await generateBill(userBasket)
 let disocuntResp = await generateDiscount(userBasket)
+let finalAmount = await getFinalAmount(invoiceAmount, disocuntResp)
 
 console.log('Total Amount - ', invoiceAmount)
-console.log('Discount Response - ', disocuntResp)
+console.log('Total Discount - ', disocuntResp.totalDiscount)
+console.log('Final Amt - ', finalAmount)

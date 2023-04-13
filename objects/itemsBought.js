@@ -3,7 +3,7 @@ const data = [
     {
         id: 1,
         itemId: 1,
-        quantity: 2
+        quantity:6
     },
     {
         id: 2,

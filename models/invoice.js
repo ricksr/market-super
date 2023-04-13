@@ -1,6 +1,7 @@
 
 const invoice = {
-    generateBill
+    generateBill,
+    getFinalAmount
 }
 
 export default invoice;
@@ -13,4 +14,9 @@ async function generateBill(data) {
         totalAmt += Number(it.quantity) * Number(it.itemPrice)
     })
     return totalAmt;
+}
+
+async function getFinalAmount(invoiceAmount, discountResp) {
+    const { totalDiscount } = discountResp;
+    return Number(invoiceAmount) - Number(totalDiscount)
 }
